@@ -26,6 +26,7 @@ return (
       onNeutral={handleNeutral}
       onBad={handleBad}
       onReset={handleReset}
+      total={total}
       />
       <Feedback 
       good={good}
