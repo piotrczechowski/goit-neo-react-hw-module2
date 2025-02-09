@@ -16,7 +16,7 @@ const handleNeutral = () => {setNeutral(neutral + 1)};
 const handleBad = () => {setBad(bad + 1)};
 const handleReset = () => {setGood(0); setNeutral(0); setBad(0)};
 const total = good + neutral + bad;
-const positive = () => { return (good / total * 100).toFixed(0) + "%";};
+const positive = () => (good / total * 100).toFixed(0) + "%";
   
 return (
     <>

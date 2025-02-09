@@ -3,7 +3,7 @@ export default function Feedback({ good, neutral, bad, total, positive}) {
         return <p>No feedback yet...</p>
     }
     
-    console.log(total)
+    // console.log(total)
 
     return (
       <>
