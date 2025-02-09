@@ -1,5 +1,7 @@
 export default function Feedback({ good, neutral, bad, total }) {
-    
+    if (total === 0) {
+        return <p>No feedback given</p>
+    }
     
     return (
       <>
