@@ -1,8 +1,10 @@
-export default function Feedback({ good, neutral, bad, total }) {
+export default function Feedback({ good, neutral, bad, total, positive}) {
     if (total === 0) {
-        return <p>No feedback given</p>
+        return <p>No feedback yet...</p>
     }
     
+    
+
     return (
       <>
       
@@ -10,6 +12,7 @@ export default function Feedback({ good, neutral, bad, total }) {
         <p>Neutral: {neutral}</p>
         <p>Bad: {bad}</p>
         <p>Total: {good + neutral + bad}</p>
+        <p>Positive: {positive()} </p>
       </>
     );
   }
