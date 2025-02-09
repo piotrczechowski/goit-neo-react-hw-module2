@@ -1,3 +1,5 @@
+import "./Options.css"
+
 export default function Options({ onGood, onNeutral, onBad, onReset }) {
     return (
       <>
